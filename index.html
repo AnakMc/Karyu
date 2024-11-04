@@ -1,0 +1,188 @@
+t>
+
+</body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KayRuStoreXz - Karyu Hosting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3b3b3b;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #FFD700;
+        }
+        .container {
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .menu img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .menu a {
+            color: #FFD700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .menu a img {
+            width: 30px;
+            height: 30px;
+            filter: hue-rotate(85deg); /* Hijau */
+        }
+        .product, .service, .vps {
+            background-color: #2b2b2b;
+            border: 1px solid #444;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .product h2, .service h2, .vps h2 {
+            color: #FFD700;
+        }
+        .order-button {
+            background-color: #FFD700;
+            color: #1a1a1a;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .order-button:hover {
+            background-color: #ffa500;
+        }
+        .benefits {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KayRuStoreXz - Karyu Hosting</h1>
+    <p>Hosting Minecraft Terbaik untuk Anda!</p>
+</header>
+
+<div class="container">
+    <!-- Titik Tiga -->
+    <div class="menu">
+        <!-- Logo -->
+        <img src="https://i.imgur.com/aNG6EUt.png" alt="KayRuStoreXz Logo">
+        <!-- Link WhatsApp Group -->
+        <a href="https://chat.whatsapp.com/ERSp06uuElO6EssDCODvP5" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30" height="30" alt="WhatsApp Group"> 
+            Join Group
+        </a>
+    </div>
+
+    <section class="products">
+        <div class="product">
+            <h2>Produk-Produk Kami</h2>
+            <ul>
+                <li><strong>Admin Panel</strong> - Rp 15.000 <button class="order-button" onclick="orderProduct('Admin Panel')">Order</button></li>
+                <li><strong>Admin Panel Permanen</strong> - Rp 25.000 (Garansi 15 Hari) <button class="order-button" onclick="orderProduct('Admin Panel Permanen')">Order</button></li>
+                <li><strong>PT Panel</strong> - Rp 20.000 / bulan <button class="order-button" onclick="orderProduct('PT Panel')">Order</button></li>
+                <li><strong>Owner Panel</strong> - Rp 30.000 / permanen <button class="order-button" onclick="orderProduct('Owner Panel')">Order</button></li>
+                <li><strong>Reseller Panel</strong> - Rp 5.000 / bulan <button class="order-button" onclick="orderProduct('Reseller Panel')">Order</button></li>
+                <li><strong>Reseller Panel Permanen</strong> - Rp 15.000 <button class="order-button" onclick="orderProduct('Reseller Panel Permanen')">Order</button></li>
+                <li>Hosting MC <button class="order-button" onclick="orderProduct('Hosting MC')">Order</button></li>
+                <li>Hosting Bot WA <button class="order-button" onclick="orderProduct('Hosting Bot WA')">Order</button></li>
+                <li>Hosting MC Premium <button class="order-button" onclick="orderProduct('Hosting MC Premium')">Order</button></li>
+                <li>Hosting MC Private Node Basic <button class="order-button" onclick="orderProduct('Hosting MC Private Node Basic')">Order</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <h2>Jasa Kami</h2>
+            <p><strong>💻 Layanan Install Ptero:</strong></p>
+            <ul>
+                <li><strong>Install Panel Ptero</strong> — Rp 5.000 <button class="order-button" onclick="orderService('Install Panel Ptero')">Order</button></li>
+                <li><strong>Install Wings</strong> — Rp 5.000 <button class="order-button" onclick="orderService('Install Wings')">Order</button></li>
+                <li><strong>Install Tema</strong> — Rp 15.000 (Wajib RAM di atas 8 GB) <button class="order-button" onclick="orderService('Install Tema')">Order</button></li>
+                <li><strong>Install Auto Suspend</strong> — Rp 15.000 <button class="order-button" onclick="orderService('Install Auto Suspend')">Order</button></li>
+                <li><strong>Install Plugin</strong> — Rp 5.000 per plugin <button class="order-button" onclick="orderService('Install Plugin')">Order</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="vps">
+        <div class="vps">
+            <h2>Daftar Harga VPS Linode</h2>
+            <ul>
+                <li><strong>VPS Linode 2GB</strong> - Rp 15.000</li>
+                <li><strong>VPS Linode 4GB</strong> - Rp 35.000</li>
+                <li><strong>VPS Linode 8GB</strong> - Rp 50.000</li>
+                <li><strong>VPS Linode 16GB</strong> - Rp 70.000</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2>Benefit</h2>
+        <ul>
+            <li>✅ Free Install Panel</li>
+            <li>✅ Free Install Wings</li>
+            <li>✅ Free Subdomain</li>
+            <li>✅ Server Milik Sendiri</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; Copyright By <span style="color: white; font-weight: bold;">KayRuStoreXz</span></p>
+</footer>
+
+<script>
+    function orderProduct(productName) {
+        const phone = "6282189803208";
+        const message = `Bang Kayru Saya Mau Pesan ${productName}`;
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+
+    function orderService(serviceName) {
+        const phone = "6282189803208";
+        const message = `Bang Kayru Saya Mau Pesan ${serviceName}`;
+        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+    }
+</script>
+
+</body>
+</html></ht
